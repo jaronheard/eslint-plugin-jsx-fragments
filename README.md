@@ -1,6 +1,8 @@
 # eslint-plugin-jsx-fragments
 
-Ensure that React is imported whenever the fragment syntax is used
+Ensure that React is imported and marked used in any file with a Fragment, ignoring any JSX pragmas and shared settings.
+
+
 
 ## Installation
 
@@ -54,8 +56,8 @@ You can also use the rule manually.
 ```json
 {
   "rules": {
-    "jsx-fragments/react-in-fragment-scope": 2,
-    "jsx-fragments/react-in-fragment-scope": 1
+    "jsx-fragments/react-in-fragment-scope": "error",
+    "jsx-fragments/fragment-uses-react": "warning"
   }
 }
 ```
@@ -63,7 +65,4 @@ You can also use the rule manually.
 ## Supported Rules
 
 - [jsx-fragments/react-in-fragment-scope](https://github.com/jaronheard/eslint-plugin-jsx-fragments/blob/master/docs/rules/react-in-fragment-scope.md): Similar to [react/react-in-jsx-scope](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) but it ignores custom pragmas and only checks files that contain fragments.
-
-```
-
-```
+- [jsx-fragments/fragment-uses-react](https://github.com/jaronheard/eslint-plugin-jsx-fragments/blob/master/docs/rules/fragment-uses-react.md): Similar to [react/jsx-uses-react](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md) but it ignores custom pragmas and only checks files that contain fragments.
