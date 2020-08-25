@@ -1,4 +1,4 @@
-# Checks that React in a file where a fragment is used (react-in-jsx-fragment-scope)
+# Checks that React in a file where a fragment is used (react-in-fragment-scope)
 
 This rule checks for the presence of a React import whenever a Fragment is used. [This GitHub comment describes how this is necessary using Emotion](https://github.com/yannickcr/eslint-plugin-react/issues/2156#issuecomment-554844831)
 

@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 const RuleTester = require("eslint").RuleTester;
-const rule = require("../../../lib/rules/react-in-jsx-fragment-scope");
+const rule = require("../../../lib/rules/react-in-fragment-scope");
 
 const path = require("path");
 const NODE_MODULES = "../../../node_modules";
@@ -30,7 +30,7 @@ const parserOptions = {
 //------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({ parserOptions });
-ruleTester.run("react-in-jsx-fragment-scope", rule, {
+ruleTester.run("react-in-fragment-scope", rule, {
   valid: [
     { code: "var React; <>fragment</>;", parser: parsers.BABEL_ESLINT },
     { code: "var App, a = <App />;" },
