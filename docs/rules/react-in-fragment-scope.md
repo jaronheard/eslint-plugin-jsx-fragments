@@ -10,7 +10,7 @@ Examples of **incorrect** code for this rule:
 
 ```js
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core';
+import { css, jsx } from "@emotion/core";
 
 const HelloWorld = () => {
   return (
@@ -26,8 +26,8 @@ Examples of **correct** code for this rule:
 
 ```js
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core';
-import * as React from 'react';
+import { css, jsx } from "@emotion/core";
+import * as React from "react";
 
 const HelloWorld = () => {
   return (

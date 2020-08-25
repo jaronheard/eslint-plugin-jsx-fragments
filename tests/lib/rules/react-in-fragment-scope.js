@@ -14,8 +14,8 @@ const rule = require("../../../lib/rules/react-in-fragment-scope");
 const path = require("path");
 const NODE_MODULES = "../../../node_modules";
 const parsers = {
-  BABEL_ESLINT: path.join(__dirname, NODE_MODULES, 'babel-eslint'),
-}
+  BABEL_ESLINT: path.join(__dirname, NODE_MODULES, "babel-eslint"),
+};
 
 const parserOptions = {
   ecmaVersion: 2018,
