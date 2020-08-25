@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jsx-fragments",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ensure that React is imported whenever the fragment syntax is used",
   "keywords": [
     "eslint",
