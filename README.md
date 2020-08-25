@@ -26,16 +26,44 @@ Add `jsx-fragments` to the plugins section of your `.eslintrc` configuration fil
 }
 ```
 
-Then configure the rules you want to use under the rules section. This plugin is designed to be used in combination with [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
+### Recommended configuration
+
+The `recommended` configuration can be used in conjunction with [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).
+
+```json
+{
+  "extends": ["plugin:react/recommended", "plugin:jsx-fragments/recommended"]
+}
+```
+
+It applies these rules.
 
 ```json
 {
   "rules": {
-    "jsx-fragments/react-in-fragment-scope": 2
+    "jsx-fragments/react-in-fragment-scope": "error",
+    "jsx-fragments/fragment-uses-react": "error"
+  }
+}
+```
+
+### Manual rule setup
+
+You can also use the rule manually.
+
+```json
+{
+  "rules": {
+    "jsx-fragments/react-in-fragment-scope": 2,
+    "jsx-fragments/react-in-fragment-scope": 1
   }
 }
 ```
 
 ## Supported Rules
 
-- [react-in-fragment-scope](https://github.com/jaronheard/eslint-plugin-jsx-fragments/blob/master/docs/rules/react-in-fragment-scope.md): Similar to [react/react-in-jsx-scope] but it ignores pragmas and only checks files that contain fragments.
+- [jsx-fragments/react-in-fragment-scope](https://github.com/jaronheard/eslint-plugin-jsx-fragments/blob/master/docs/rules/react-in-fragment-scope.md): Similar to [react/react-in-jsx-scope](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) but it ignores custom pragmas and only checks files that contain fragments.
+
+```
+
+```
